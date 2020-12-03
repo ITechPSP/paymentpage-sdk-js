@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test": "jest"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -14,10 +13,6 @@
       "<rootDir>/__tests__/mock/",
       "<rootDir>/node_modules/",
       "<rootDir/index.js"
-    ],
-    "collectCoverage": true,
-    "coverageReporters": [
-      "lcov"
     ]
   },
   "repository": {
