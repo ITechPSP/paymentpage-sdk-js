@@ -1,8 +1,6 @@
 # ITechPSP Javascript package
 
-[![Build Status](https://travis-ci.org/ITechPSP/paymentpage-sdk-js.svg?branch=master)](https://travis-ci.org/ITechPSP/paymentpage-sdk-js)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/f92c4b71c7ebacfa2a32/test_coverage)](https://codeclimate.com/github/ITechPSP/paymentpage-sdk-js/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/f92c4b71c7ebacfa2a32/maintainability)](https://codeclimate.com/github/ITechPSP/paymentpage-sdk-js/maintainability)
+[![Build Status](https://travis-ci.com/ITechPSP/paymentpage-sdk-js.svg?branch=main)](https://travis-ci.com/ITechPSP/paymentpage-sdk-js)
 
 ### What is it?
 
