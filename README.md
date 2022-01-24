@@ -1,11 +1,11 @@
-# ITechPSP Javascript package
+# TrxHosts Javascript package
 
-[![Build Status](https://travis-ci.com/ITechPSP/paymentpage-sdk-js.svg?branch=main)](https://travis-ci.com/ITechPSP/paymentpage-sdk-js)
+[![Build Status](https://travis-ci.com/trxhosts/paymentpage-sdk-js.svg?branch=main)](https://travis-ci.com/trxhosts/paymentpage-sdk-js)
 
 ### What is it?
 
 It is package that will help you with generating payment URL according to 
-[ITechPSP documentation](https://developers.trxhost.com/en/en_PP_Integration.html).
+[TrxHosts documentation](https://developers.trxhost.com/en/en_PP_Integration.html).
 
 ### How to use?
 
@@ -13,13 +13,13 @@ It is package that will help you with generating payment URL according to
 
 1. Install the package (with your package manager):
 ```shell
-npm install itechpsp
-yarn add itechpsp
+npm install trxhosts
+yarn add trxhosts
 ```
 
 2. Require somewhere in your code, set parameters and get the URL:
 ```javascript
-const { Payment } = require('itechpsp');
+const { Payment } = require('trxhosts');
 
 // create Payment object with your account ID and secret salt
 const e = new Payment('112', 'my_secret');
@@ -37,11 +37,11 @@ const url = e.getUrl();
 
 Now your can render payment `url` somewhere on your checkout page.
 
-#### Receive callback from ITechPSP
+#### Receive callback from TrxHosts
 
 Example with [Express](http://expressjs.com):
 ```javascript
-const { Callback } = require('itechpsp');
+const { Callback } = require('trxhosts');
 
 app.post('/payment/callback', function(req, res) {
   const callback = new Callback('secret', req.body);

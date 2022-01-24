@@ -7,11 +7,11 @@ test('Object', () => {
 
 const e = new Payment(121, 'secret', {}, 'http://baseurl');
 
-test('Test ITechPSP.getQueryString', () => {
+test('Test TrxHosts.getQueryString', () => {
   expect(e.getQueryString()).toBe('project_id=121&interface_type=%7B%22id%22%3A22%7D');
 });
 
-test('Test ITechPSP.getUrl', () => {
+test('Test TrxHosts.getUrl', () => {
   const trimmedUrl = e.getUrl().replace(/&signature=.*$/, '');
   expect(trimmedUrl).toBe(`http://baseurl/payment?${e.getQueryString()}`);
 });
@@ -21,7 +21,7 @@ test('Test signature is urlencoded', () => {
   expect(url.split('=').pop().match(/[ +=,;]/)).toBeNull();
 });
 
-test('Test ITechPSP setters', () => {
+test('Test TrxHosts setters', () => {
   e.accountToken = 1;
   e.bestBefore = 1;
   e.cardOperationType = 'sale';

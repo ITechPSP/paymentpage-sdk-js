@@ -1,7 +1,7 @@
 {
-  "name": "itechpsp",
+  "name": "trxhosts",
   "version": "0.1.7",
-  "description": "ITechPSP Javascript package",
+  "description": "TrxHosts Javascript package",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ITechPSP/paymentpage-sdk-js"
+    "url": "https://github.com/trxhosts/paymentpage-sdk-js"
   },
   "license": "MIT",
   "devDependencies": {
